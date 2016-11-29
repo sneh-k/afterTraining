@@ -1,0 +1,7 @@
+#encoding=UTF-8
+#version=1
+org.eclipse.egit.core.source,4.5.0.201609210915-r,file:/C:/eclipse/plugins/org.eclipse.egit.core.source_4.5.0.201609210915-r.jar,-1,false
+org.eclipse.egit.gitflow.source,4.5.0.201609210915-r,file:/C:/eclipse/plugins/org.eclipse.egit.gitflow.source_4.5.0.201609210915-r.jar,-1,false
+org.eclipse.egit.gitflow.ui.source,4.5.0.201609210915-r,file:/C:/eclipse/plugins/org.eclipse.egit.gitflow.ui.source_4.5.0.201609210915-r.jar,-1,false
+org.eclipse.egit.mylyn.ui.source,4.5.0.201609210915-r,file:/C:/eclipse/plugins/org.eclipse.egit.mylyn.ui.source_4.5.0.201609210915-r.jar,-1,false
+org.eclipse.egit.ui.source,4.5.0.201609210915-r,file:/C:/eclipse/plugins/org.eclipse.egit.ui.source_4.5.0.201609210915-r.jar,-1,false

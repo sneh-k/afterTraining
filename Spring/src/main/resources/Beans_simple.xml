@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+<!-- 	<bean id="item1" class="com.spring.Item">
+		<property name="itemId" value="101"></property>
+		<property name="itemName" value="item1"></property>
+		<property name="price" value="1500"></property>
+	</bean>
+	
+	<bean id="item2" class="com.spring.Item">
+		<property name="itemId" value="102"></property>
+		<property name="itemName" value="item2"></property>
+		<property name="price" value="2000"></property>
+	</bean>
+	
+	<bean id="item3" class="com.spring.Item">
+		<property name="itemId" value="103"></property>
+		<property name="itemName" value="item3"></property>
+		<property name="price" value="1600"></property>
+	</bean>		
+	
+	
+	<bean id="order1" class="com.spring.Order">
+		<property name="id" value="201"></property>
+		<property name="item" ref="item1"></property>
+	</bean>
+		
+	<bean id="order2" class="com.spring.Order">
+		<property name="id" value="202"></property>
+		<property name="item" ref="item2"></property>
+	</bean>
+	
+	<bean id="order3" class="com.spring.Order">
+		<property name="id" value="203"></property>
+		<property name="item" ref="item3"></property>
+	</bean>	 -->
+	
+
+		<bean id="demoBean" class="com.spring.lifecycle.DemoBean" 
+	init-method="customInit" destroy-method="customDestroy">
+	</bean>
+	<bean class="com.spring.lifecycle.PrintBean"></bean>
+	
+</beans>
+ 
+

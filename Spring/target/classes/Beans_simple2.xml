@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<bean id="msg1" class="com.spring.chatapp.Message">
+		<property name="msg" value="Message 1"></property>
+	</bean>
+
+	<bean id="msg2" class="com.spring.chatapp.Message">
+		<property name="msg" value="Message 2"></property>
+	</bean>
+	
+	<bean id="msg3" class="com.spring.chatapp.Message">
+		<property name="msg" value="Message 3"></property>
+	</bean>
+	
+	<bean id="msg4" class="com.spring.chatapp.Message">
+		<property name="msg" value="Message 4"></property>
+	</bean>
+	
+	<bean id="usr1" class="com.spring.chatapp.User">
+		<property name="uid" value="101" ></property>
+		<property name="uname" value="User 1"></property>
+		<property name="message">
+			<list>
+				<ref bean="msg1"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="usr2" class="com.spring.chatapp.User">
+		<property name="uid" value="102" ></property>
+		<property name="uname" value="User 2"></property>
+		<property name="message">
+			<list>
+				<ref bean="msg2"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="usr3" class="com.spring.chatapp.User">
+		<property name="uid" value="103" ></property>
+		<property name="uname" value="User 3"></property>
+		<property name="message">
+			<list>
+				<ref bean="msg3"/>
+				<ref bean="msg4"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="cr1" class="com.spring.chatapp.Chatroom">
+		<property name="id" value="201" ></property>
+		<property name="cname" value="Chatroom 1"></property>
+		<property name="user">
+			<list>
+				<ref bean="usr1"/>
+				<ref bean="usr2"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="cr2" class="com.spring.chatapp.Chatroom">
+		<property name="id" value="202" ></property>
+		<property name="cname" value="Chatrooom 2"></property>
+		<property name="user">
+			<list>
+				<ref bean="usr3"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
+ 
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-4.1.xsd">
+
+<!-- <bean id="collectionHandler" class="com.spring.aop.CollectionHandler" />
+<bean id="performanceMonitor" class="com.spring.aop.PerformanceMonitor" /> -->
+   
+<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />  
+ 
+<!--  <bean class="com.spring.aop.AddTime"></bean>
+ <bean class="com.spring.aop.AOPClass"></bean>
+ <bean class="com.spring.aop.MainAOP"></bean> -->
+
+	<bean class="com.spring.logg.User"/>
+	<bean class="com.spring.logg.UserHandler"/>
+	<bean class="com.spring.logg.UserAspect"/>
+	<bean class="com.spring.logg.MainAOP"></bean>
+</beans>
+ 
+

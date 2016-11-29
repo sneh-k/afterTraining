@@ -1,0 +1,7 @@
+127.0.0.1 - - [03/Nov/2016:11:17:12 +0530] "GET / HTTP/1.1" 404 1000
+127.0.0.1 - - [03/Nov/2016:11:17:13 +0530] "GET /ShoppingProj/login.html HTTP/1.1" 200 481
+127.0.0.1 - - [03/Nov/2016:11:17:17 +0530] "POST /ShoppingProj/controller?forward=authenticate HTTP/1.1" 200 258
+127.0.0.1 - - [03/Nov/2016:11:17:23 +0530] "POST /ShoppingProj/controller?forward=authenticate HTTP/1.1" 200 550
+127.0.0.1 - - [03/Nov/2016:11:17:46 +0530] "POST /ShoppingProj/controller?forward=addbooks HTTP/1.1" 200 519
+127.0.0.1 - - [03/Nov/2016:11:17:49 +0530] "POST /ShoppingProj/controller?forward=showcart HTTP/1.1" 200 203
+127.0.0.1 - - [03/Nov/2016:11:17:51 +0530] "POST /ShoppingProj/controller?forward=logout HTTP/1.1" 200 481
