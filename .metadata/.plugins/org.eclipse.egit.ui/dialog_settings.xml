@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="0" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="572" key="DIALOG_WIDTH"/>
+	<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+	<item value="510" key="DIALOG_HEIGHT"/>
+	<item value="401" key="DIALOG_X_ORIGIN"/>
+	<item value="34" key="DIALOG_Y_ORIGIN"/>
 	<list key="EGit.KnownHosts">
-		<item value="bitbucket.org"/>
 		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
 		<item value="github.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/snehak-xor/afterTraining.git"/>
 		<item value="https://github.com/snehak-xor/freshersbatch-oct16.git"/>
 	</list>
 	<list key="CommitDialog.authorValues">
@@ -14,6 +21,22 @@
 	<list key="CommitDialog.committerValues">
 		<item value="kamat_sn &lt;kamat_sn@Sneha-K.India.XoriantCorp.com&gt;"/>
 	</list>
+	<section name="org.eclipse.egit.ui.internal.dialogs.RebaseTargetSelectionDialog.dialogBounds">
+		<item value="526" key="DIALOG_WIDTH"/>
+		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+		<item value="508" key="DIALOG_HEIGHT"/>
+		<item value="424" key="DIALOG_X_ORIGIN"/>
+		<item value="36" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.ResetTargetSelectionDialog.dialogBounds">
+		<item value="526" key="DIALOG_WIDTH"/>
+		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
+		<item value="714" key="DIALOG_HEIGHT"/>
+		<item value="424" key="DIALOG_X_ORIGIN"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitImportWizard">
+	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item value="658" key="DIALOG_WIDTH"/>
 		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>

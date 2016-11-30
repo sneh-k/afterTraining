@@ -1,0 +1,4 @@
+ <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
+<div id="mapid" style = "height: 500px;">
+</div>

@@ -1,0 +1,25 @@
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+<div id="mapid" style = "height: 500px;">
+	
+</div>
+<script type="text/javascript">
+	var mymap = L.map('mapid').setView([18.5204, 73.8567], 13);
+	L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXZpbnZ2aWoiLCJhIjoiY2l3NGhmeDdyMDA3NTJ6bDVjaWFvZWRzayJ9.Gc7Gc9USClhWJCaC3yqRcQ', {
+    attribution: 'hi this is a map',
+    maxZoom: 18,
+    accessToken: 'pk.eyJ1IjoiYXZpbnZ2aWoiLCJhIjoiY2l3NGhmeDdyMDA3NTJ6bDVjaWFvZWRzayJ9.Gc7Gc9USClhWJCaC3yqRcQ'
+}).addTo(mymap);
+var marker = L.marker([18.5204, 73.8567]).addTo(mymap);
+marker.bindPopup("Hello world<br>im not a popup").openPopup();
+var popup = L.popup();
+function ifmapclicked(e){
+	//alert('you clicked '+e.latlng.toString());
+	mymap.removeLayer(marker);
+	popup.setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString());
+    marker = L.marker(e.latlng).addTo(mymap);
+    marker.bindPopup(popup).openPopup();
+}
+mymap.on('click', ifmapclicked);
+</script>

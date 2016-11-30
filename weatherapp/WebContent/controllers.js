@@ -11,6 +11,18 @@ weatherApp.config(function($routeProvider , $mdThemingProvider) {
     	templateUrl: 'weatherview.html',
     	controller: 'citycontroller'
     });
+    
+    $routeProvider.when('/map',{
+    	templateUrl: 'mapview.html',
+    	controller: 'citycontroller',
+    	resolve:{
+    		init: function(){
+    			return function(){
+    				alert('loading map here');
+    			}
+    		}
+    	}
+    });
 
     $routeProvider.otherwise({redirectTo: '/'});
 });
@@ -43,6 +55,28 @@ controllers.citycontroller = function($scope, $rootScope , $http){
 		});
 	}
 
+	$scope.loadmap = function(){
+		console.log('hello map');
+		var mymap = L.map('mapid').setView([18.5204, 73.8567], 13);
+		L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXZpbnZ2aWoiLCJhIjoiY2l3NGhmeDdyMDA3NTJ6bDVjaWFvZWRzayJ9.Gc7Gc9USClhWJCaC3yqRcQ', {
+	    attribution: 'hi this is a map',
+	    maxZoom: 18,
+	    accessToken: 'pk.eyJ1IjoiYXZpbnZ2aWoiLCJhIjoiY2l3NGhmeDdyMDA3NTJ6bDVjaWFvZWRzayJ9.Gc7Gc9USClhWJCaC3yqRcQ'
+	}).addTo(mymap);
+	var marker = L.marker([18.5204, 73.8567]).addTo(mymap);
+	marker.bindPopup("Hello world<br>im not a popup").openPopup();
+	var popup = L.popup();
+	function ifmapclicked(e){
+		//alert('you clicked '+e.latlng.toString());
+		mymap.removeLayer(marker);
+		popup.setLatLng(e.latlng)
+	        .setContent("You clicked the map at " + e.latlng.toString());
+	    marker = L.marker(e.latlng).addTo(mymap);
+	    marker.bindPopup(popup).openPopup();
+	}
+	mymap.on('click', ifmapclicked);
+	}
+	
 	$scope.getweather = function(latitude,longitude){
 		$rootScope.progresshidden = true;
 		$rootScope.fontcolor = "black";	
